@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Tiles/gameTile.tres" type="TileSet" id=2]
+
+[node name="Level1" type="Node2D"]
+position = Vector2( 1, 0 )
+
+[node name="Entities" type="Node" parent="."]
+
+[node name="Player" parent="Entities" instance=ExtResource( 1 )]
+position = Vector2( 206, 39 )
+
+[node name="Map" type="Node" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Map"]
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 80, 80 )
+format = 1
+tile_data = PoolIntArray( -655360, 0, 0, -655359, 0, 0, -655358, 0, 0, -655357, 0, 0, -655356, 0, 0, -655355, 0, 0, -655354, 0, 0, -655353, 0, 0, -655352, 0, 0, -655351, 0, 0, -655350, 0, 0, -655349, 0, 0, -655348, 0, 0, -655347, 0, 0, -589824, 0, 0, -589811, 0, 0, -524288, 0, 0, -524275, 0, 0, -458752, 0, 0, -458751, 0, 0, -458739, 0, 0, -393216, 0, 0, -393213, 0, 0, -393212, 0, 0, -393203, 0, 0, -327680, 0, 0, -327673, 0, 0, -327672, 0, 0, -327667, 0, 0, -262144, 0, 0, -262131, 0, 0, -196608, 0, 0, -196598, 0, 0, -196597, 0, 0, -196595, 0, 0, -131072, 0, 0, -131059, 0, 0, -65536, 0, 0, -65528, 0, 0, -65527, 0, 0, -65523, 0, 0, 0, 0, 0, 5, 0, 0, 6, 0, 0, 8, 0, 0, 9, 0, 0, 13, 0, 0, 65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 65539, 0, 0, 65540, 0, 0, 65541, 0, 0, 65542, 0, 0, 65543, 0, 0, 65544, 0, 0, 65545, 0, 0, 65546, 0, 0, 65547, 0, 0, 65548, 0, 0, 65549, 0, 0 )
